@@ -1,0 +1,205 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social information in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+    \headerfirstnamestyle{Nishant} \headerlastnamestyle{Singh} \\
+    \vspace{2mm}
+    {\faEnvelope\ talktonishantsingh.ns@gmail.com} | {\faMobile\ 6352403156} | {\faMapMarker\ Bhopal, MP} | {\faLink\ \href{https://www.linkedin.com/in/tesla59/}{LinkedIn}} | {\faLink\ \href{https://www.github.com/tesla59/}{GitHub}}
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+    \cventry
+    {B.Tech in Information Technology | GPA: 8.71 }
+    {Indian Institute of Information Technology Bhopal}
+    {Bhopal, MP}
+    {Dec, 2021 – Present}
+    % {GPA: 8.65}
+    {}
+\end{cventries}
+\vspace{-6mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Work Experience}
+\begin{cventries}
+    \cventry
+    {DevOps Engineer Intern}
+    {GoComet Pvt Ltd}
+    {Bangalore}
+    {Oct, 2023 – Present}
+    {\begin{cvitems}
+            \item {Established a robust monitoring infrastructure by configuring proactive alerts for PostgreSQL 13, specifically targeting the long idling transactions, locks and max concurrent connections, providing immediate visibility into potential issues and enabling swift resolution}
+            \item {Spearheaded the daily deployment process of production code through a enhanced rolling deployment strategy on Kubernetes, orchestrating seamless updates across 5+ systems and leveraging automated tools to minimize downtime \& enhance system reliability}
+            \item {Enhanced operational insights by setting up Fluentd logging agent to push detailed, enriched application logs to New Relic, facilitating comprehensive analysis and streamlined troubleshooting the intricacies and heightened understanding of application behavior}
+        \end{cvitems}}
+    \cventry
+    {DevOps Engineer Intern}
+    {Mobilicis India Pvt Ltd}
+    {Remote}
+    {Jun, 2023 – Oct, 2023}
+    {\begin{cvitems}
+            \item {Executed a successful comprehensive migration involving the seamless transition of 300+ repositories from Bit Bucket to GitHub}
+            \item {Implemented comprehensive testing methodologies and conducted over 50 robust tests to guarantee the establishment of secure and enabled hierarchical access controls for the repositories and the CI/CD pipeline, thereby enhancing overall development efficiency}
+            \item {Pioneered successful implementation of 8+ robust Jenkins-based CI/CD pipeline, automating build, test, and deployment processes}
+        \end{cvitems}}
+    %    \cventry
+    % {DevOps Engineer Intern}
+    % {PlyPicker}
+    % {Remote}
+    % {Jun, 2023 – Jul, 2023}
+    % {\begin{cvitems}
+    %   \item {Composed bash script to automate provisioning of infrastructure \& deployment of application for accelerated development efficiency}
+    %   \item {Collaborated with the team and configured health checks for 10+ cloud server using Grafana, enabled monitoring of the application}
+    %   \end{cvitems}}
+    \cventry
+    {DevOps Engineer Intern}
+    {The Renal Project}
+    {Remote}
+    {Jul, 2022 – Apr, 2023}
+    {\begin{cvitems}
+            \item {Led the design, implementation, and maintenance of automated CI/CD pipelines for code deployment using GitHub Actions, resulting in 30\% improvement in development and testing efficiency by strategically eliminating 70\% of manual deployment processes}
+            \item {Administered successful migration of 4+ servers from Oracle Cloud Infra to AWS Cloud, employed Terraform to implement declarative methodologies and facilitated the adoption of AWS Elastic Kubernetes Service (EKS), replacing traditional Docker deployment}
+        \end{cvitems}}
+    % \cventry
+    % {Backend Developer}
+    % {WebKnot Technologies Pvt Ltd}
+    % {Remote}
+    % {Dec, 2022 – Jan, 2023}
+    % {\begin{cvitems}
+    %        \item Designed and implemented authentication API using AWS Cognito, Lambda and Go SDK in an event driven, server-less architecture
+    %        \item Engineered a structured schema for 10+ tables using PostgreSQL utilising AWS Lambda to deploy the APIs on server-less architecture
+    %   \end{cvitems}}
+\end{cventries}
+\vspace{-5mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Projects}
+\begin{cventries}
+    \cventry
+    {Go, Fiber, REST APIs, SQLite, Docker}
+    {WhisperWeb}
+    {\href{https://github.com/tesla59/whisperweb-backend}{tesla59/whisperweb-backend}}
+    {}
+    {\begin{cvitems}
+            \item Developed a confession website using Fiber web framework in Go for back-end using SQLite 3 as the DBMS to store and retrieve data
+            \item Designed the front-end part using Next JS 13 capitalising Server-Side Rendering (SSR) pattern to enhance performance and experience
+            \item Containerized the website using Docker ensuring portability and reliability across different environments and easy deployment
+        \end{cvitems}}
+
+    \vspace{-5mm}
+    \cventry
+    {Node JS, Linux, Bash, REPL}
+    {Shell JS}
+    {\href{https://github.com/tesla59/shell.js}{tesla59/shell.js}}
+    {}
+    {\begin{cvitems}
+            \item Innovated and developed a custom Bash-like Shell using Node.js version 16, using built-in asynchronous libraries in JavaScript
+            \item Redesigned asynchronous libraries to optimise performance, enabling concurrent execution of commands like CD, LS, PWD etc
+        \end{cvitems}}
+
+    \vspace{-5mm}
+    \cventry
+    {C, Linux, Linux Kernel}
+    {Hydra Kernel}
+    {\href{https://github.com/tesla59/hydra_kernel}{tesla59/hydra\textunderscore{}kernel}}
+    {}
+    {\begin{cvitems}
+            \item Acted as an Open-Source Developer and modified the Android Kernel based on v4.14 for Redmi Note 7 Pro for enhanced efficiency
+            \item Increased performance by 20\% in benchmark and reduced battery consumption by 10\% in daily usage in comparison to stock kernel
+        \end{cvitems}}
+
+    \vspace{-3mm}
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Skills}
+\vspace{-5mm}
+\begin{cventries}
+    \cventry
+    {}
+    {
+        \def\arraystretch{1.15}
+        {
+            \begin{tabular}{ l l }
+                Languages:  & {\skill{ Go, Rust, TypeScript, JavaScript, Ruby, Dart, Python, Kotlin, C, C++}}        \\
+                Tools:      & {\skill{ Docker, Kubernetes, Terraform, Ansible, Git, ArgoCD, SQL, Jenkins}}           \\
+                Frameworks: & {\skill{ Flutter, React JS, Gin, GoFiber, Gorm, Express JS, Next JS}}                  \\
+                Platforms:  & {\skill{ Linux, AWS Cloud, Azure, Google Cloud Platform, Oracle Cloud Infrastructure}} \\
+            \end{tabular}}}
+    {}
+    {}
+    {}
+\end{cventries}
+\vspace{-9mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Certificates
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Certificates}
+\begin{cvhonors}
+    \cvhonor
+    {Google Cloud Certified Professional Cloud Architect}
+    {Successfully achieved certification as a Google Cloud Professional Cloud Architect, showcasing expertise in architecting secure and complex solutions with high scalability and availability on the Google Cloud Platform}
+    {Google Cloud}
+    {Jan, 2024}
+    \cvhonor
+    {Google Cloud Certified Associate Cloud Engineer}
+    {Successfully achieved certification as a Google Cloud Associate Cloud Engineer, showcasing proficiency in designing, implementing and managing cloud solutions on the Google Cloud Platform and mastery in skills within Google Cloud}
+    {Google Cloud}
+    {Nov, 2023}
+\end{cvhonors}
+\
+\end{document}
