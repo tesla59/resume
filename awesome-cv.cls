@@ -194,7 +194,7 @@
 \newfontfamily\footerfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-Italic,
   BoldFont=*-Bold
 ]{SourceSansPro}
 
@@ -202,17 +202,17 @@
 \newfontfamily\bodyfont[
   Path=\@fontdir,
   UprightFont=*-Regular,
-  ItalicFont=*-It,
+  ItalicFont=*-Italic,
   BoldFont=*-Bold,
-  BoldItalicFont=*-BoldIt
+  BoldItalicFont=*-BoldItalic
 ]{SourceSansPro}
 
 \newfontfamily\bodyfontlight[
   Path=\@fontdir,
   UprightFont=*-Light,
-  ItalicFont=*-LightIt,
+  ItalicFont=*-LightItalic,
   BoldFont=*-Semibold,
-  BoldItalicFont=*-SemiboldIt
+  BoldItalicFont=*-SemiboldItalic
 ]{SourceSansPro}
 
 
