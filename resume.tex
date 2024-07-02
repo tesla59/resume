@@ -78,7 +78,7 @@
     {Bangalore}
     {Oct, 2023 – Present}
     {\begin{cvitems}
-            \item {Established a robust monitoring infrastructure by configuring proactive alerts for PostgreSQL 13, specifically targeting the long idling transactions, locks and max concurrent connections, providing immediate visibility into potential issues and enabling swift resolution}
+            \item {Established a robust monitoring infrastructure by configuring alerts for PostgreSQL 13, specifically targeting the long idling transactions, locks and max concurrent connections, providing immediate visibility into potential issues and enabling swift resolution}
             \item {Spearheaded the daily deployment process of production code through a enhanced rolling deployment strategy on Kubernetes, orchestrating seamless updates across 5+ systems and leveraging automated tools to minimize downtime \& enhance system reliability}
             \item {Enhanced operational insights by setting up Fluentd logging agent to push detailed, enriched application logs to New Relic, facilitating comprehensive analysis and streamlined troubleshooting the intricacies and heightened understanding of application behavior}
         \end{cvitems}}
@@ -111,6 +111,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Projects}
 \begin{cventries}
+    % 0. GoLoadBalancer
+    \cventry
+    {Go, Docker, Load Balancer, Concurrency}
+    {GoLoadBalancer}
+    {\href{https://github.com/tesla59/GoLoadBalancer}{tesla59/GoLoadBalancer}}
+    {}
+    {\begin{cvitems}
+            \item Developed GoLoadBalancer, an automatic load balancer with round-robin functionality, inspired by Kubernetes operator architecture
+            \item Leveraged Goroutine and Docker to spawn 3+ load balancer to balance the incoming load and 5+ workers to handle incoming request
+            \item Incorporated SQLite 3 Database to store and provide real-time statistics such as of all workers such as average failure rate and delay
+        \end{cvitems}}
+
+    \vspace{-5mm}
     % 1. WhisperWeb
     \cventry
     {Go, Fiber, REST APIs, SQLite, Docker}
@@ -118,7 +131,7 @@
     {\href{https://github.com/tesla59/whisperweb-backend}{tesla59/whisperweb-backend}}
     {}
     {\begin{cvitems}
-            \item Developed a confession website using Fiber web framework in Go for back-end using SQLite 3 as the DBMS to store and retrieve data
+            \item Coded a HTTP Server using Fiber web framework in Go for back-end using SQLite 3 as the DBMS to store and retrieve data
             \item Designed the front-end part using Next JS 13 capitalising Server-Side Rendering (SSR) pattern to enhance performance and experience
             \item Containerized the website using Docker ensuring portability and reliability across different environments and easy deployment
         \end{cvitems}}
@@ -137,15 +150,16 @@
 
     \vspace{-5mm}
     % 3. Hydra Kernel
-    \cventry
-    {C, Linux, Linux Kernel}
-    {Hydra Kernel}
-    {\href{https://github.com/tesla59/hydra_kernel}{tesla59/hydra\textunderscore{}kernel}}
-    {}
-    {\begin{cvitems}
-            \item Acted as an Open-Source Developer and modified the Android Kernel based on v4.14 for Redmi Note 7 Pro for enhanced efficiency
-            \item Increased performance by 20\% in benchmark and reduced battery consumption by 10\% in daily usage in comparison to stock kernel
-        \end{cvitems}}
+    % \cventry
+    % {C, Linux, Linux Kernel}
+    % {Hydra Kernel}
+    % {\href{https://github.com/tesla59/hydra_kernel}{tesla59/hydra\textunderscore{}kernel}}
+    % {}
+    % {\begin{cvitems}
+    %         \item Acted as an Open-Source Developer and modified the Android Kernel based on v4.14 for Redmi Note 7 Pro for enhanced efficiency
+    %         \item Increased performance by 20\% in benchmark and reduced battery consumption by 10\% in daily usage in comparison to stock kernel
+    %     \end{cvitems}}
+
 
     \vspace{-3mm}
 \end{cventries}
@@ -180,12 +194,12 @@
 \begin{cvhonors}
     \cvhonor
     {Google Cloud Certified Professional Cloud Architect}
-    {Successfully achieved certification as a Google Cloud Professional Cloud Architect, showcasing expertise in architecting secure and complex solutions with high scalability and availability on the Google Cloud Platform}
+    {Mastered certification for the Google Cloud Professional Cloud Architect exam, showcasing expertise in architecting secure and complex solutions with high scalability and availability on the Google Cloud Platform}
     {Google Cloud}
     {Jan, 2024}
     \cvhonor
     {Google Cloud Certified Associate Cloud Engineer}
-    {Successfully achieved certification as a Google Cloud Associate Cloud Engineer, showcasing proficiency in designing, implementing and managing cloud solutions on the Google Cloud Platform and mastery in skills within Google Cloud}
+    {Achieved certification as a Google Cloud Associate Cloud Engineer, showcasing proficiency in designing, implementing and managing cloud solutions on the Google Cloud Platform and mastery in skills within Google Cloud}
     {Google Cloud}
     {Nov, 2023}
 \end{cvhonors}
