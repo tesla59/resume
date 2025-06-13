@@ -19,6 +19,8 @@
 %%% Themes: Awesome-CV
 \documentclass[]{awesome-cv}
 \usepackage{textcomp}
+\usepackage[none]{hyphenat}
+
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
 
@@ -41,14 +43,13 @@
 %%% Override a separator for social information in header(default: ' | ')
 %\headersocialsep[\quad\textbar\quad]
 \begin{document}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Profile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
     \headerfirstnamestyle{Nishant} \headerlastnamestyle{Singh} \\
     \vspace{2mm}
-    {\faEnvelope\ talktonishantsingh.ns@gmail.com} | {\faMobile\ +91 6352403156} | {\faMapMarker\ Bhopal, MP} | {\faLinkedinSquare\ \href{https://www.linkedin.com/in/tesla59/}{tesla59}} | {\faGithubSquare\ \href{https://www.github.com/tesla59/}{tesla59}} \
+    {\faEnvelope\ talktonishantsingh.ns@gmail.com} | {\faMobile\ +91 6352403156} | {\faMapMarker\ Noida, UP} | {\faLinkedinSquare\ \href{https://www.linkedin.com/in/tesla59/}{tesla59}} | {\faGithubSquare\ \href{https://www.github.com/tesla59/}{tesla59}} \
 \end{center}
 \vspace{-3mm}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -57,14 +58,14 @@
 \cvsection{Education}
 \begin{cventries}
     \cventry
-    {B.Tech in Information Technology | GPA: 8.76 }
+    {\textbf{B.Tech in Information Technology | GPA: 8.76 }}
     {Indian Institute of Information Technology Bhopal}
     {Bhopal, MP}
     {Dec, 2021 – Present}
     % {GPA: 8.65}
-    {}
+    {\hspace{-22mm}\textbf{Relevant Coursework}: Data Structures and Algorithm, Operating System, Computer Network, Database Management System}
 \end{cventries}
-\vspace{-9mm}
+\vspace{-5mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Experience
@@ -72,7 +73,6 @@
 \cvsection{Work Experience}
 \vspace{-3mm}
 \begin{cventries}
-    \vspace{-1mm}
     % -2 GSoC
     \cventry
     {Mentor}
@@ -81,18 +81,23 @@
     {Mar, 2025 – Present}
     {\begin{cvitems}
         \item Mentored contributors to design \& implement a scalable observability layer for KubeArmor, integrating 6+ Prometheus metrics to expose real-time insights into policy enforcement, alerting, \& overall security activity across Kubernetes \& non-Kubernetes workloads
-        \item Led and supported contributors through technical decision-making around Go development, Prometheus integration, and Kubernetes design patterns, fostering a collaborative environment while aligning implementations with CNCF’s engineering standards
+        \item Introduced and exposed 4+ key production-grade metrics endpoints in Go, adhering to Prometheus exposition standards and enabling seamless integration with observability tools like Grafana, Alertmanager, and custom dashboards, leading to improved observability
+        \item Co-ordinated closely with core maintainers and mentors over 175+ engineering hours to align implementation with CNCF open-source guidelines ensuring consistent code quality, improving traceability, policy enforcement monitoring, and ecosystem maintainability
+        \vspace{-2mm}
         \end{cvitems}}
     % -1 Samsung
+    \vspace{-2mm}
     \cventry
     {Software Developer Intern}
     {Samsung Research Institute - Delhi}
     {Noida, UP}
-    {Jan, 2025 – Present}
+    {Jan, 2025 – May, 2025}
     {\begin{cvitems}
-        \item Enforced API request validations by defining field constraints (e.g., min/max values) in Swagger specs and implementing runtime checks using the validator package in Go across 10–12 backend APIs, contributing to robust API validation and improved reliability
+        % \item Enforced API request validations by defining field constraints (e.g., min/max values) in Swagger specs and implementing runtime checks using the validator package in Go across 10–12 backend APIs, contributing to robust API validation and improved reliability
+        \item Implemented runtime API validation using the validator package in Go, adding field-level constraints like minimum/maximum values to Swagger specifications for 11 Iris-based backend APIs, reducing 80\% of validation errors and improving overall API reliability
         \item Revamped UMD movie matching by manually mapping unmatched metadata entries between Samsung’s UMD and IMDb, and developing a custom CLI tool that reduced the task time from 4–5 hours to just 30 minutes daily
         \end{cvitems}}
+    \vspace{-2mm}
     % 0. LFX
     \cventry
     {LFX Mentee | Open Source Contributor}
@@ -100,11 +105,12 @@
     {Salt Lake, USA}
     {Sept, 2024 – Nov, 2024}
     {\begin{cvitems}
-        \item Improved the security and management functionality of KubeArmor for virtual machines (VMs) by expanding its feature set by 15\% and enhancing the capabilities for unorchestrated containers and non-kubernetes environments
+        \item Transformed the security and management functionality of KubeArmor for virtual machines (VMs) by expanding its feature set by 15\% and enhancing the capabilities for unorchestrated containers and non-kubernetes environments
         \item Developed and optimized 3 real-time configuration interfaces (via karmor.yaml, gRPC, and CLI), enabling real-time updates to security settings without the need for service restarts. Increased configuration efficiency and flexibility, reducing manual intervention
-        \item Streamlined the installation and policy management process by refining the karmor CLI for VMs, reducing installation time by 25\%, while also extending CLI capabilities to enable faster policy management, resulting in a 20\% reduction in operational overhead
+        \item Streamlined the installation and policy management process by refining the KubeArmor CLI for VMs, reducing installation time by 25\%, while extending CLI capabilities to enable faster policy management, resulting in 20\% reduction in operational overhead
         \end{cvitems}}
-    % \vspace{-3mm}
+
+    \vspace{-2mm}
     % 1. Gocomet
     \cventry
     {DevOps Engineer Intern}
@@ -114,7 +120,8 @@
     {\begin{cvitems}
             \item {Established a robust monitoring infrastructure by configuring alerts for PostgreSQL 13, specifically targeting the long idling transactions, locks and max concurrent connections, providing immediate visibility into potential issues and enabling swift resolution}
             \item {Spearheaded the daily deployment process of production code through a enhanced rolling deployment strategy on Kubernetes, orchestrating seamless updates across 5+ systems and leveraging automated tools to minimize downtime \& enhance system reliability}
-            \item {Enhanced operational insights by setting up Fluentd logging agent to push detailed, enriched application logs to New Relic, facilitating comprehensive analysis and streamlined troubleshooting the intricacies and heightened understanding of application behavior}
+            \item {Enhanced operational insights by setting up Fluentd logging agent to push detailed, enriched application logs to New Relic, enabling deeper understanding of application behavior, streamlined troubleshooting the intricacies \& reducing average debugging time by 30\%}
+            % \item Enhanced operational insights by setting up the Fluentd logging agent to push enriched application logs to New Relic, reducing average debugging time by 30\% and enabling deeper analysis and understanding of application behavior
         \end{cvitems}}
     % 2. Mobilics
     % \vspace{-3mm}
@@ -147,8 +154,21 @@
 %     Projects
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Projects}
-\vspace{-4mm}
+\vspace{-3.5mm}
 \begin{cventries}
+    % -1. Blaze
+    \cventry
+    {Go, NextJS, PostgreSQL, WebSocket, WebRTC}
+    {Blaze}
+    {\href{https://github.blazetv.live}{blazetv.live}}
+    {}
+    {\begin{cvitems}
+            \item Coded a scalable Omeagle-like real-time video chat platform using Gorilla WebSockets in Go, achieving 10,000+ concurrent WebSocket connections on a single core, structured using SOLID principles and a clean Repository-Service-Controller architecture
+            \item Leveraged PostgreSQL to persist 100,000+ user sessions, metadata, and abuse reports, while building a Next.js frontend integrated with WebRTC, supporting 5,000+ simultaneous peer-to-peer video/audio streams, coordinated through a custom Go signaling server
+            \item Designed and implemented robust CI/CD pipelines using GitHub Actions, automating deployment workflows reducing release times by 70\%, and containerized the application with Docker to enable consistent and scalable deployments across multiple environments
+        \end{cvitems}}
+
+    \vspace{-4mm}
     % 0. GoLoadBalancer
     \cventry
     {Go, Docker, Load Balancer, Concurrency}
@@ -156,12 +176,12 @@
     {\href{https://github.com/tesla59/GoLoadBalancer}{tesla59/GoLoadBalancer}}
     {}
     {\begin{cvitems}
-            \item Developed GoLoadBalancer, an automatic load balancer with round-robin functionality, inspired by Kubernetes operator architecture
+            \item Developed an automatic load balancer in Go v1.21 with round-robin functionality, inspired by Kubernetes v1.24 operator architecture
             \item Leveraged Goroutine and Docker to spawn 3+ load balancer to balance the incoming load and 5+ workers to handle incoming request
             \item Incorporated SQLite 3 Database to store and provide real-time statistics such as of all workers such as average failure rate and delay
         \end{cvitems}}
 
-    \vspace{-5mm}
+    \vspace{-4mm}
     % 1. WhisperWeb
     \cventry
     {Go, Fiber, REST APIs, SQLite, Docker}
@@ -171,10 +191,10 @@
     {\begin{cvitems}
             \item Coded a HTTP Server using Fiber web framework in Go for back-end using SQLite 3 as the DBMS to store and retrieve data
             \item Designed the front-end part using Next JS 13 capitalising Server-Side Rendering (SSR) pattern to enhance performance and experience
-            \item Containerized the website using Docker ensuring portability and reliability across different environments and easy deployment
+            \item Containerized the website using Docker ensuring portability and reliability across 5+ different environments and easy deployment
         \end{cvitems}}
 
-    \vspace{-5mm}
+    % \vspace{-5mm}
     % 2. Shell.js
     % \cventry
     % {Node JS, Linux, Bash, REPL}
@@ -199,7 +219,7 @@
     %     \end{cvitems}}
 
 
-    \vspace{-3mm}
+    \vspace{-7mm}
 \end{cventries}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -214,9 +234,9 @@
         \def\arraystretch{1.15}
         {
             \begin{tabular}{ l l }
-                Languages:  & {\skill{ Go, Rust, TypeScript, JavaScript, Ruby, Dart, Python, Kotlin, C, C++}}        \\
+                Languages:  & {\skill{ Go, Rust, TypeScript, JavaScript, Dart, Python, C, C++}}        \\
                 Tools:      & {\skill{ Docker, Kubernetes, Terraform, Ansible, Git, ArgoCD, SQL, Jenkins}}           \\
-                Frameworks: & {\skill{ Flutter, React JS, Gin, GoFiber, Gorm, Express JS, Next JS}}                  \\
+                Frameworks: & {\skill{ Iris, Gorilla, Flutter, NextJS, GoFiber, Gorm}}                  \\
                 Platforms:  & {\skill{ Linux, AWS Cloud, Azure, Google Cloud Platform, Oracle Cloud Infrastructure}} \\
             \end{tabular}}}
     {}
@@ -232,14 +252,15 @@
 \begin{cvhonors}
     \cvhonor
     {Google Cloud Certified Professional Cloud Architect}
-    {Mastered certification for the Google Cloud Professional Cloud Architect exam, showcasing expertise in architecting secure and complex solutions with high scalability and availability on the Google Cloud Platform}
+    {}
+    % {Mastered certification for the Google Cloud Professional Cloud Architect exam, showcasing expertise in architecting secure and complex solutions with high scalability and availability on the Google Cloud Platform}
     {Google Cloud}
     {Jan, 2024}
-    \cvhonor
-    {Google Cloud Certified Associate Cloud Engineer}
-    {Achieved certification as a Google Cloud Associate Cloud Engineer, showcasing proficiency in designing, implementing and managing cloud solutions on the Google Cloud Platform and mastery in skills within Google Cloud}
-    {Google Cloud}
-    {Nov, 2023}
+    % \cvhonor
+    % {Google Cloud Certified Associate Cloud Engineer}
+    % {Achieved certification as a Google Cloud Associate Cloud Engineer, showcasing proficiency in designing, implementing and managing cloud solutions on the Google Cloud Platform and mastery in skills within Google Cloud}
+    % {Google Cloud}
+    % {Nov, 2023}
 \end{cvhonors}
 \
 \end{document}
