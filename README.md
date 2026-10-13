@@ -1,12 +1,21 @@
-# Resumake Template 2
-> LaTeX code generated at [resumake.io](https://resumake.io)
+# Nishant Singh - Resume
 
-## Usage
-To generate a PDF from this LaTeX code, navigate to this folder in a terminal and run:
+LaTeX resume built using [Jake's Resume Template](https://github.com/jakegut/resume) (based off [sb2nov/resume](https://github.com/sb2nov/resume)).
 
-    xelatex resume.tex
+## Compilation
 
-## Requirements
-You will need to have `xelatex` installed on your machine.
+### Online (Recommended)
+You can directly compile this template on [Overleaf](https://www.overleaf.com/) using the default `pdfLaTeX` compiler.
 
-Alternatively, you can use a site like [ShareLaTeX](https://sharelatex.com) to build and edit your LaTeX instead.
+### Locally
+If you have a TeX distribution (TeX Live / MacTeX / MikTeX) installed:
+
+```bash
+pdflatex resume.tex
+```
+
+or using `latexmk`:
+
+```bash
+latexmk -pdf resume.tex
+```
