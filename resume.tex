@@ -136,7 +136,7 @@
       {Ultimate Kronos Group}{Pune, MH}
       \resumeItemListStart
         \resumeItem{Designed and built a \textbf{Playwright} test framework and CI pipeline from scratch with reusable fixtures, page objects, and automated reporting, cutting regression runtime by \textbf{86.7\%} from \textbf{15 hours to 2 hours} and reducing flakiness by \textbf{54\%}}
-        \resumeItem{Developed compensation \textbf{hierarchy} views for plans with up to \textbf{20,000 employees} using \textbf{Angular, Spring Boot}, and \textbf{PostgreSQL}, implementing multi-currency aggregation, reporting structure validation, and hierarchy refresh}
+        \resumeItem{Developed compensation \textbf{hierarchy} views for plans with up to \textbf{20,000 employees} using \textbf{Angular, Spring Boot}, and \textbf{PostgreSQL}, implementing multi-currency aggregation, reporting structure validation, and hierarchy synchronization}
         \resumeItem{Remediated \textbf{Kafka} failure handling in salary plan distribution, preventing \textbf{producer} errors from stalling workflows, and implemented audit event publishing for tracking and auditing compensation changes across salary planning workflows}
         \resumeItem{Optimized \textbf{GKE} infrastructure and retired obsolete Helm deployment paths post-migration to \textbf{Cloud Run}, resolving CI dependencies and eliminating up to \textbf{\$250/month} in development environment costs across \textbf{12 namespaces} in GKE}
       \resumeItemListEnd
@@ -186,26 +186,25 @@
       \resumeProjectHeading
           {\textbf{Blaze} $|$ \emph{Go, Next.js, PostgreSQL, WebSocket, WebRTC}}{\href{https://github.com/tesla59/blaze}{\underline{github.com/tesla59/blaze}}}
           \resumeItemListStart
-            \resumeItem{Coded a scalable Omegle-like real-time video chat platform using Gorilla \textbf{WebSockets} in \textbf{Go}, achieving \textbf{10,000+} concurrent WebSocket connections on a single core, structured using SOLID principles and clean Repository-Service-Controller architecture}
-            \resumeItem{Leveraged PostgreSQL to persist \textbf{100,000+} user sessions, metadata, and abuse reports, while building a \textbf{Next.js} frontend integrated with \textbf{WebRTC}, supporting \textbf{5,000+} simultaneous peer-to-peer video/audio streams via custom Go signaling server}
-            \resumeItem{Transformed \& organised robust \textbf{CI/CD} pipelines using \textbf{GitHub Actions}, automating deployment workflows reducing release times by \textbf{70\%}, and containerized application with Docker for consistent multi-environment deployments}
+            \resumeItem{Coded an Omegle-like real-time video chat platform using \textbf{Gorilla WebSockets} in \textbf{Go}, achieving \textbf{10,000+} concurrent WebSocket connections on a single core, following SOLID principles and a modular design for concurrent session handling}
+            \resumeItem{Persisted \textbf{100,000+} user sessions, metadata, and abuse reports in \textbf{PostgreSQL}, building a \textbf{Next.js} frontend integrated with \textbf{WebRTC} to support \textbf{5,000+} simultaneous peer-to-peer video/audio streams through a custom Go signaling server}
+            % \resumeItem{Transformed \& organised robust \textbf{CI/CD} pipelines using \textbf{GitHub Actions}, automating deployment workflows reducing release times by \textbf{70\%}, and containerized application with Docker for consistent multi-environment deployments}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{GoLoadBalancer} $|$ \emph{Go, Docker, Load Balancer, Concurrency}}{\href{https://github.com/tesla59/GoLoadBalancer}{\underline{github.com/tesla59/GoLoadBalancer}}}
           \resumeItemListStart
-            \resumeItem{Developed an automatic load balancer in Go \textbf{v1.21} with round-robin functionality, inspired by Kubernetes \textbf{v1.24} operator architecture}
-            \resumeItem{Leveraged Goroutines and Docker to spawn \textbf{3+} load balancers to balance incoming load and \textbf{5+} workers to handle incoming requests}
-            \resumeItem{Incorporated \textbf{SQLite 3} Database to store and provide real-time statistics of all workers such as average failure rate and delay}
+            \resumeItem{Developed a concurrent \textbf{Go} load balancer with round-robin routing, inspired by \textbf{Kubernetes} v1.24 operator architecture}
+            \resumeItem{Orchestrated \textbf{3+} load balancers and \textbf{5+} workers using \textbf{Goroutines}, \textbf{Docker}, and \textbf{SQLite 3} for worker health metrics}
           \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{WhisperWeb} $|$ \emph{Go, Fiber, REST APIs, SQLite, Docker}}{\href{https://github.com/tesla59/whisperweb-backend}{\underline{github.com/tesla59/whisperweb-backend}}}
-          \resumeItemListStart
-            \resumeItem{Coded an HTTP Server using Fiber web framework in \textbf{Go} for back-end using \textbf{SQLite 3} as DBMS to store and retrieve data}
-            \resumeItem{Designed front-end using \textbf{Next.js 13} capitalizing Server-Side Rendering (SSR) pattern to enhance performance and user experience}
-            \resumeItem{Containerized application using \textbf{Docker} ensuring portability and reliability across \textbf{5+} different environments and easy deployment}
-          \resumeItemListEnd
+      % \resumeProjectHeading
+      %     {\textbf{WhisperWeb} $|$ \emph{Go, Fiber, REST APIs, SQLite, Docker}}{\href{https://github.com/tesla59/whisperweb-backend}{\underline{github.com/tesla59/whisperweb-backend}}}
+      %     \resumeItemListStart
+      %       \resumeItem{Coded an HTTP Server using Fiber web framework in \textbf{Go} for back-end using \textbf{SQLite 3} as DBMS to store and retrieve data}
+      %       \resumeItem{Designed front-end using \textbf{Next.js 13} capitalizing Server-Side Rendering (SSR) pattern to enhance performance and user experience}
+      %       \resumeItem{Containerized application using \textbf{Docker} ensuring portability and reliability across \textbf{5+} different environments and easy deployment}
+      %     \resumeItemListEnd
 
       % \resumeProjectHeading
       %     {\textbf{Shell JS} $|$ \emph{Node.js, Linux, Bash, REPL}}{\href{https://github.com/tesla59/shell.js}{\underline{github.com/tesla59/shell.js}}}
