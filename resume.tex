@@ -96,7 +96,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -122,7 +122,7 @@
       {Indian Institute of Information Technology Bhopal}{Bhopal, MP}
       {B.Tech in Information Technology (GPA: 8.73)}{Dec. 2021 -- June 2025}
       \resumeItemListStart
-        \resumeItem{\textbf{Relevant Coursework:} Data Structures and Algorithms, Database Management Systems, Operating Systems, Computer Networks}
+        \resumeItem{\textbf{Coursework:} Data Structures and Algorithms, Database Management System, Operating System, Computer Network}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -135,21 +135,18 @@
       {Software Engineer}{July 2025 -- Present}
       {Ultimate Kronos Group}{Pune, MH}
       \resumeItemListStart
-        \resumeItem{Owned and delivered \textbf{Roll-Up View} for salary planning platform (Angular, Spring Boot, PostgreSQL), enabling real-time compensation aggregation and multi-currency normalization at \textbf{$\sim$12.8M employee} scale; supported April 2026 release with stake of \textbf{$\sim$\$7.5M} ARR}
-        \resumeItem{Reduced pay scale update time from \textbf{$\sim$10 mins} to seconds, eliminating \textbf{365+} hours of manual effort per cycle for \textbf{$\sim$640} enterprise users}
-        \resumeItem{Built and productionized GCP infrastructure integrating \textbf{7+} distributed systems (Kafka, Redis, Denodo), provisioning multi-environment deployments and executing DB schema migrations; enabled first production rollout of a \textbf{$\sim$\$7.5M} ARR platform at \textbf{20K-employee} scale}
-        \resumeItem{Remediated a high-severity (\textbf{CVSS 8.1}) stored \textbf{XSS} vulnerability by implementing \textbf{OWASP}-aligned input sanitization and output encoding, preventing session hijacking and multi-user compromise risk across \textbf{1,600+} enterprises and \textbf{$\sim$12.8M} employee records}
-        % \resumeItem{Developed Spring Boot API for employee data in a microservices environment, implementing controller, service, repository, and optimized query executing under 100 ms; complemented with Selenium-based automation tests to strengthen regression coverage}
-        % \resumeItem{Designed and implemented Kafka-based audit logging by creating a non-blocking producer to emit audit transactions and a consumer in a separate service to persist data into the database, ensuring 100\% delivery guarantees and fault-tolerant processing of audit events}
-        % \resumeItem{Provisioned and configured GCP infrastructure for the microservices application across 10+ services, including folder, projects, Redis instances, production deployment environments, and VPC networking to ensure seamless connectivity between services}
+        \resumeItem{Designed and built a \textbf{Playwright} test framework and CI pipeline from scratch with reusable fixtures, page objects, and automated reporting, cutting regression runtime by \textbf{86.7\%} from \textbf{15 hours to 2 hours} and reducing flakiness by \textbf{54\%}}
+        \resumeItem{Developed compensation \textbf{hierarchy} views for plans with up to \textbf{20,000 employees} using \textbf{Angular, Spring Boot}, and \textbf{PostgreSQL}, implementing multi-currency aggregation, reporting structure validation, and hierarchy refresh}
+        \resumeItem{Remediated \textbf{Kafka} failure handling in salary plan distribution, preventing \textbf{producer} errors from stalling workflows, and implemented audit event publishing for tracking and auditing compensation changes across salary planning workflows}
+        \resumeItem{Optimized \textbf{GKE} infrastructure and retired obsolete Helm deployment paths post-migration to \textbf{Cloud Run}, resolving CI dependencies and eliminating up to \textbf{\$250/month} in development environment costs across \textbf{12 namespaces} in GKE}
       \resumeItemListEnd
 
     \resumeSubheading
       {Mentor}{Mar. 2025 -- Nov. 2025}
       {Google Summer of Code}{Remote}
       \resumeItemListStart
-        \resumeItem{Mentored contributors to design \& implement a scalable observability layer for KubeArmor, integrating \textbf{6+ Prometheus} metrics to expose real-time insights into policy enforcement, alerting, \& overall security activity across Kubernetes \& non-Kubernetes workloads}
-        \resumeItem{Introduced and exposed \textbf{4+} key production-grade metrics endpoints in \textbf{Go}, adhering to Prometheus exposition standards and enabling seamless integration with observability tools like \textbf{Grafana}, Alertmanager, \& custom dashboards, leading to improved \textbf{observability}}
+        \resumeItem{Mentored contributors to design and implement a scalable observability layer for KubeArmor, integrating \textbf{6 Prometheus} metrics to expose real-time insights into policy enforcement, alerting, and enhanced security activity across workloads}
+        \resumeItem{Introduced and exposed \textbf{4+} key production-grade metrics endpoints in \textbf{Go}, adhering to Prometheus exposition standards and enabling integration with monitoring tools like \textbf{Grafana} and \textbf{Alert Manager}, leading to improved \textbf{observability}}
         % \resumeItem{Co-ordinated closely with core maintainers and mentors over 175 engineering hours to align implementation with CNCF open-source guidelines ensuring consistent code quality, improving traceability, policy enforcement monitoring, and ecosystem maintainability}
       \resumeItemListEnd
 
@@ -157,7 +154,7 @@
       {Software Developer Intern}{Jan. 2025 -- May 2025}
       {Samsung Research Institute - Delhi}{Noida, UP}
       \resumeItemListStart
-        \resumeItem{Implemented \textbf{runtime} API validation using the validator package in \textbf{Go}, adding field-level constraints like minimum/maximum values to Swagger specifications for \textbf{11 Iris-based} backend APIs, reducing \textbf{80\%} of validation errors and improving overall API reliability}
+        \resumeItem{Implemented \textbf{runtime} API validation using the validator package in \textbf{Go}, adding field-level constraints like range values to Swagger specifications for \textbf{11 Iris-based} backend APIs, reducing \textbf{80\%} of validation errors and improving API reliability}
         \resumeItem{Revamped UMD movie matching by manually mapping unmatched metadata entries between \textbf{Samsung}'s UMD and IMDb database, and developing a custom CLI tool that reduced the task time from \textbf{4--5 hours} to just \textbf{30 minutes} daily}
       \resumeItemListEnd
 
@@ -165,9 +162,9 @@
       {DevOps Engineer Intern}{Oct. 2023 -- Oct. 2024}
       {GoComet Pvt Ltd}{Bangalore, KA}
       \resumeItemListStart
-        \resumeItem{Established a robust monitoring infrastructure by configuring alerts for \textbf{PostgreSQL 13}, specifically targeting long idling transactions, locks, and max concurrent connections, providing immediate visibility into potential issues and enabling swift resolution}
-        \resumeItem{Spearheaded daily deployment process of production code through an enhanced rolling deployment strategy on Kubernetes, orchestrating seamless updates across \textbf{5+ systems} and leveraging automated tools to minimize downtime \& enhance system reliability}
-        \resumeItem{Enhanced operational insights by setting up \textbf{Fluentd logging} agent to push detailed, enriched application logs to \textbf{New Relic}, enabling deeper understanding of application behavior, streamlined troubleshooting, and reducing average debugging time \textbf{by 30\%}}
+        \resumeItem{Optimized \textbf{Fluentd} log ingestion and \textbf{New Relic} telemetry by enriching application logs and eliminating unnecessary metrics collection, reducing observability costs by up to \textbf{45\%} while maintaining monthly spend within the \textbf{\$2,000} budget}
+        \resumeItem{Spearheaded daily deployment process of production code using an enhanced rolling deployment strategy on Kubernetes, orchestrating updates across \textbf{5 systems} and leveraged automated tools to minimize downtime and enhanced reliability}
+        \resumeItem{Established a robust monitoring infrastructure by configuring alerts for \textbf{PostgreSQL 13}, specifically targeting long idling transactions, locks, and max concurrent connections, providing visibility into potential issues and enabled swift resolution}
       \resumeItemListEnd
 
     % -----------Other Past Experience (uncomment if needed)-----------
@@ -178,23 +175,6 @@
     %     \resumeItem{Transformed the security and management functionality of KubeArmor for virtual machines (VMs) by expanding its feature set by 15\% and enhancing capabilities for unorchestrated containers and non-kubernetes environments}
     %     \resumeItem{Developed and optimized 3 real-time configuration interfaces (via karmor.yaml, gRPC, and CLI), enabling real-time updates to security settings without service restarts, increasing configuration efficiency and flexibility}
     %     \resumeItem{Streamlined installation and policy management by refining KubeArmor CLI for VMs, reducing installation time by 25\% and cutting operational overhead by 20\%}
-    %   \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {DevOps Engineer Intern}{Jun. 2023 -- Oct. 2023}
-    %   {Mobilicis India Pvt Ltd}{Remote}
-    %   \resumeItemListStart
-    %     \resumeItem{Executed a successful comprehensive migration involving the seamless transition of 300+ repositories from Bitbucket to GitHub}
-    %     \resumeItem{Implemented comprehensive testing methodologies and conducted over 50 robust tests to guarantee secure hierarchical access controls for repositories and CI/CD pipelines}
-    %     \resumeItem{Pioneered implementation of 8+ robust Jenkins-based CI/CD pipelines, automating build, test, and deployment processes}
-    %   \resumeItemListEnd
-
-    % \resumeSubheading
-    %   {DevOps Engineer Intern}{Jul. 2022 -- Apr. 2023}
-    %   {The Renal Project}{Remote}
-    %   \resumeItemListStart
-    %     \resumeItem{Led design, implementation, and maintenance of automated CI/CD pipelines using GitHub Actions, improving development and testing efficiency by 30\% and eliminating 70\% of manual deployment processes}
-    %     \resumeItem{Administered migration of 4+ servers from Oracle Cloud Infra to AWS Cloud, employing Terraform for declarative infrastructure and facilitating adoption of AWS Elastic Kubernetes Service (EKS)}
     %   \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -261,8 +241,6 @@
     \resumeSubHeadingListStart
       \resumeProjectHeading
           {\textbf{Google Cloud Certified Professional Cloud Architect} $|$ \emph{Google Cloud}}{Jan. 2024}
-      \resumeProjectHeading
-          {\textbf{Google Cloud Certified Associate Cloud Engineer} $|$ \emph{Google Cloud}}{Nov. 2023}
     \resumeSubHeadingListEnd
 
 
